@@ -28,10 +28,10 @@ class MoviesController extends AbstractController
         // findOneBy() - SELECT * FROM movies WHERE id = ? AND title = ? ORDER BY id DESC
         // count() - SELECT COUNT(*) FROM movies WHERE id = ?
 
-        $repository = $this->em->getRepository(Movie::class);
-        $movies = $repository->getClassName();
+        // $repository = $this->em->getRepository(Movie::class);
+        // $movies = $repository->getClassName();
         
-        dd($movies);
+        // dd($movies);
 
         return $this->render('index.html.twig');
     }
